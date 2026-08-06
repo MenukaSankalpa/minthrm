@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Human Resource Information system - Site</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!--Google Sign In-->
+    <meta name="google-site-verification" content="I26nSazxKl_g3Hk_fx6Yt_gb5tFqgdaNiWYHWWOQC7s" />
+        <meta name="google-signin-client_id" content="">
+    <!--        <meta name="google-signin-client_id" content="490351122846-0ksjact0kmjjgde6cmii0a99sk746jfe.apps.googleusercontent.com">-->
+
+    <!-- CSS | Normalize -->
+    <link rel="stylesheet" href="/css/custom/normalize.css">
+<link rel="stylesheet" href="/css/custom/button.css">
+<link rel="stylesheet" href="/css/custom/login.css">
+    <!--====================================================================
+            Javascript
+        =====================================================================-->
+
+    <!--JS | Jquery Lib-->
+    <!-- <script src=""></script> -->
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery-migrate-3.4.0.min.js"></script>
+    <!--JS | Bootstrapjs-->
+    <script src="/js/upgrade/bootstrap.min.js"></script>
+     <!--JS | Bootstrapjs-->
+     <script src="/js/custom/common.js?v=1.31"></script>
+
+    <script type="text/javascript">
+        var http_path = "https://ceyline.minthrm.com/";
+    </script>
+
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+
+</head>
+
+<body class="login">
+<input type="hidden" value="aWZuMEhJdTM2OXBnbkhZZ0tINUxMTHZoUEQ5aFpWSlMi6jblI2KmcjGSsX0On3V5hG6dUrYpjMXF7bkd9nMTag==" name="csrf_token" id="csrf_token" />    <div class="logo">
+        
+        <img src="/uploads/company/200/emp_5f34bd351a536.png" alt="companylogo" />
+
+    </div>
+
+    <div class="menu-toggler sidebar-toggler">
+    </div>
+
+    <!--Login form-->
+    <div class="content">
+        <link rel='icon' href='/images/system/icon/favicon/favicon.png' type='image/png' />
+<!-- <link href="//db.onlinewebfonts.com/c/623c7118249e082fe87a78e08506cb4b?family=Segoe+UI" rel="stylesheet" type="text/css"/> -->
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+<style>
+    @font-face {font-family: "Segoe UI";
+        src: url("/fonts/623c7118249e082fe87a78e08506cb4b.eot"); /* IE9*/
+        src: url("/fonts/623c7118249e082fe87a78e08506cb4b") format("embedded-opentype"), /* IE6-IE8 */
+        url("/fonts/623c7118249e082fe87a78e08506cb4b.woff2") format("woff2"), /* chrome firefox */
+        url("/fonts/623c7118249e082fe87a78e08506cb4b.woff") format("woff"), /* chrome firefox */
+        ; /* iOS 4.1- */
+    }
+</style>
+<div class="login-form">
+    <form id="login-form" action="/index.php" method="post">
+<input type="hidden" value="aWZuMEhJdTM2OXBnbkhZZ0tINUxMTHZoUEQ5aFpWSlMi6jblI2KmcjGSsX0On3V5hG6dUrYpjMXF7bkd9nMTag==" name="YII_CSRF_TOKEN" />        <div class="emp-image-wrapper" id="cookieUserNameIDhide">
+            <img src="/uploads/empProfile/160/emp_68bea9b419b5f.png"/>
+        </div>
+        <div id="cookieUserNameIDhideName">
+            <h3 class="form-title">
+                Menuka</h3></div>
+    
+    
+    <div class="form-group"
+         id="cookieUserNameID"  style="display: none;" >
+        <h3>Sign in to your account</h3>
+        <input class="form-control" placeholder="Username" autocomplete="off" name="User[user_name]" id="User_user_name" type="text" value="CHL0169" />    </div>
+    <div class="form-group password-container-login">
+        <input class="form-control" placeholder="Password" autocomplete="off" name="User[user_password]" id="User_user_password" type="password" />        <i class="loginpassWordcheckIcon" id="eye"></i>
+    </div>
+
+    
+  
+    <div class="action-wrapper">
+                <button type="button" class="btn blue" onclick="doLogin()">Sign in</button>
+        
+                <!--        <a class="help"  href="" >Need help ? </a>-->
+        
+        <div class="help-wrp">
+            <div  class="bt-head">
+                <a class="help" href="/site/ForgetPass">Unable to sign in?</a>
+
+                            </div>
+            
+
+            
+                    </div>
+        <!--        <a class="help" href="/hris/site/ForgetPass">Need help ? </a>-->     
+    </div>
+    <div class="message"></div>
+
+    </form>    <div class="footer-contet">
+        <div class="block-360">
+            <div class="center-box">
+                <a class="forget-password" href="javascript:void(0);">Sign in with a different account</a>
+            </div>            
+            <div class="center-box logo-box">
+                <a target="_blank" href="http://www.minthrm.com/">
+                    <img src="/images/system/logo/log_20x100_mint.svg"
+                         alt="logo"/>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ===========================================================================
+        Backend Script 
+============================================================================ -->
+<script type="text/javascript">
+        
+            $(function () {
+            $('#User_user_password').keypress(function (e) {
+            if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+            doLogin()
+                    return false;
+            }
+            });
+                    $("#User_user_name").keypress(function (e) {
+            if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+            doLogin()
+                    return false;
+            }
+            });
+            });
+            function doLogin() {
+
+            showInfoMessage();
+                    sendData('login-form', '', 'Site/DoLogin', function (res) {
+                    var obj = jQuery.parseJSON(res);
+                            if (obj.code == 200) {
+                    showSuccessMessage(obj.msg);
+ window.location = http_path + "Site/Index";                     $("#User_user_name").prop('disabled', true);
+                    $("#User_user_password").prop('disabled', true);
+                    } else if (obj.code == 201) {
+                    window.location = http_path + "Site/passWordChange";
+                    } else if (obj.code == 202) {
+                    window.location = http_path + "supportSystem/channelPartner";
+                    }else if (obj.code == 203) {
+                    window.location = http_path + "Site/firstTimeMFASetup";
+                    }else if (obj.code == 204) {
+                    window.location = http_path + "Site/oTPAuthenticate";
+                    }
+                    else {
+                    showErrorMessage(obj.msg);
+                    }
+                    });
+            }
+
+    $(document).on('click', '.forget-password', function (evt) {
+    evt.preventDefault();
+            if ($('#cookieUserNameIDhide').length && $('#cookieUserNameIDhideName').length) {
+    $('#cookieUserNameIDhide,#cookieUserNameIDhideName').fadeOut("fast", function () {
+    $('#cookieUserNameID').slideDown(200);
+            $("#User_user_name").val('');
+    });
+    } else {
+    $('#cookieUserNameID').slideDown(200);
+            $("#User_user_name").val('');
+    }
+    });
+
+    function onSignIn(googleUser) {
+
+        var lastLogOutTime = parseInt(sessionStorage.getItem("signout"));
+        var nextAllowedMinLogInTime = lastLogOutTime + 3000;
+        var current = $.now();
+
+        if(current > nextAllowedMinLogInTime || isNaN(lastLogOutTime)){
+            showInfoMessage();
+            var profile = googleUser.getBasicProfile();
+            var id_token = googleUser.getAuthResponse().id_token;
+            //sendUserDataToAuthenticate(id_token,googleUser);
+            if (googleUser.hasGrantedScopes('openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar.events')){
+                sendUserDataToAuthenticateUser(id_token,googleUser);
+            }else{
+                googleUser.grantOfflineAccess({
+                    scope: 'openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar.events',
+                    hint :profile.getEmail()
+                }).then(function (res) {
+                    sendUserDataToAuthenticate(res.code);
+                })
+            }
+           // verifyUser(id_token,googleUser);
+        }
+    }
+
+    function onFailure(error) {
+        console.log(error);
+    }
+    function renderButton() {
+        gapi.signin2.render('my-signin2', {
+            'scope': 'openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile',
+            'width': 300,
+            'height': 35,
+            'longtitle': true,
+            'theme': 'light',
+            'onsuccess': onSignIn,
+            'onfailure': onFailure
+        });
+    }
+
+
+    function sendUserDataToAuthenticateUser(idToken,googleUser) {
+        path = 'site/authenticateGoogleAccount';
+        var extraData = "&idToken=" + idToken+"&access_token="+googleUser.getAuthResponse().access_token;
+        //var extraData = "&code=" + code+"&idToken="+idtoken;
+        $.ajax({
+            type: "POST",
+            url: http_path + path,
+            data: extraData,
+            success: function (res) {
+                //callback(res);
+                var obj = jQuery.parseJSON(res);
+                if (obj.code == 200){
+                    showSuccessMessage(obj.msg);
+                                        window.location = http_path + "Site/Index";
+                    
+                    $("#User_user_name").prop('disabled', true);
+                    $("#User_user_password").prop('disabled', true);
+
+                }else if (obj.code == 201) {
+                    window.location = http_path + "Site/passWordChange";
+                }
+                else {console.log("login error");
+                    showErrorMessage(obj.msg);
+                    signOut();
+                }
+            }
+        });
+    }
+
+
+    function sendUserDataToAuthenticate(code) {
+        path = 'site/authenticateGoogleAccount';
+        //var extraData = "&idToken=" + id_token+"&access_token="+googleUser.getAuthResponse().access_token;
+        var extraData = "&code="+code;
+        $.ajax({
+            type: "POST",
+            url: http_path + path,
+            data: extraData,
+            success: function (res) {
+                //callback(res);
+                var obj = jQuery.parseJSON(res);
+                if (obj.code == 200){
+                showSuccessMessage(obj.msg);
+                 
+                            window.location = http_path + "Site/Index"; 
+                                    
+                    $("#User_user_name").prop('disabled', true);
+                    $("#User_user_password").prop('disabled', true);
+                    
+                }else if (obj.code == 201) {
+                    window.location = http_path + "Site/passWordChange";
+                    }
+                else {console.log("login error");
+                    showErrorMessage(obj.msg);
+                    signOut();
+                }
+            }
+        });
+}
+
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+            sessionStorage.setItem("signout", $.now());
+        });
+    }
+    
+    var passwordInputLogin = document.querySelector("#User_user_password");
+    var eyeLogin = document.querySelector("#eye");
+
+    eyeLogin.addEventListener("click", function(){
+        this.classList.toggle("fa-eye-slash");
+        var type = passwordInputLogin.getAttribute("type") === "password" ? "text" : "password";
+        passwordInputLogin.setAttribute("type", type);
+    });
+
+</script>
+
+
+
+<style>
+    .flex-Microsoft{
+        display: flex;
+        background: #fff;
+        border: 1px solid #8C8C8C;
+        font-weight: 600;
+        color: #5E5E5E;
+        font-size: 15px;
+        padding: 11.5px 12px;
+        margin-top: 18px;
+        font-family: Segoe UI Regular;
+        
+    }
+    .Microsoft_img{
+        width: 18px;
+        height: 18px;
+        padding-right:12px;
+    }
+    
+</style>    </div>
+</body>
+
+</html>

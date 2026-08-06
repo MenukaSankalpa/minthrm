@@ -1,0 +1,497 @@
+.text-light-86 {
+    color: rgba(67, 72, 73, 0.86);
+}
+
+.text-light-56 {
+    color: rgba(67, 72, 73, 0.56);
+}
+
+.f-12 {
+    font-size: 12px !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+#forgetpassword-form {
+    width: 70%;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+h6.title {
+    font-size: 12px;
+    color: rgba(78, 79, 75, 0.56);
+}
+
+.login {
+    background: #fff;
+}
+
+.login .logo, .logo-footer {
+    margin: 8% auto 20px;
+    text-align: center;
+}
+
+.logo-footer {
+    margin: 80px auto 0;
+}
+
+.login .content, .input-icon {
+    position: relative;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.login .login-form {
+    width: 360px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    -o-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px !important;
+    -o-border-radius: 3px !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    -ms-border-radius: 3px !important;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.login-form h3,
+.froget-form h3 {
+    padding: 28px 0 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #4e4f4b;
+    font-weight: 400;
+}
+
+.login-form h3.form-title {
+    padding: 20px 0 15px;
+}
+
+.login-form .form-control,
+.froget-form .form-control {
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgba(67, 72, 73, 0.86);
+    font-size: 14px;
+    text-indent: 12px;
+    font-weight: 300;
+    height: 36px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    outline: 0;
+}
+
+.emp-image-wrapper {
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 105px;
+    margin: 40px auto 0;
+    overflow: hidden;
+    width: 105px;
+    padding: 3px;
+    background: #1bd6ff; /* Old browsers */
+    background: -moz-linear-gradient(135deg, #a2deee 0%, #a2deee 17%, #4d99c0 83%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(135deg, #a2deee 0%, #a2deee 17%, #4d99c0 83%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #a2deee 0%, #a2deee 17%, #4d99c0 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a2deee', endColorstr='#a2deee', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.emp-image-wrapper img {
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
+}
+
+.login-form .form-control:focus, .froget-form .form-control:focus {
+    border: 1px solid rgba(75, 141, 248, 1);
+    box-shadow: inset 1px 1px 5px rgba(195, 195, 195, 0.35);
+}
+
+.form-actions {
+    display: inline;
+    float: right;
+    margin-bottom: 15px;
+}
+
+label.remember_me {
+    color: #6F7071;
+}
+
+input[type='checkbox'] {
+    display: inline;
+    vertical-align: middle;
+}
+
+.errorMessage, .alert-danger, .info_msage, .success_msage {
+    font-family: 'Open Sans', sans-serif;
+    color: #f26b55;
+    font-size: 13px;
+    padding: 7px 0 8px;
+
+}
+
+.info_msage {
+    color: #31b0d5;
+}
+
+.success_msage {
+    color: #18d25c;
+}
+
+.alert {
+    border-width: 1px;
+}
+
+.display-none, .display-hide {
+    display: none;
+}
+
+.input-icon > .form-control {
+    padding-left: 15px;
+}
+
+.btn {
+    background-image: none !important;
+    border-radius: 2px !important;
+    border-width: 0;
+    box-shadow: none;
+    filter: none;
+    font-size: 14px;
+    outline: medium none !important;
+    padding: 8px 14px;
+    text-shadow: none;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+.action-wrapper {
+    margin: 0 0 10px;
+}
+
+.blue.btn {
+    background-color: rgba(75, 141, 248, 0.8);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgba(75, 141, 248, 1);
+}
+
+div.footer-contet {
+    left: 0;
+    bottom: -100px;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+a.forget-password, a.help {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    color: rgba(75, 141, 248, 1);
+}
+
+a.forget-password {
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    display: inline-block;
+}
+
+.help-wrp {
+    display: block;
+    margin: 15px 0 0;
+}
+
+a.help {
+    display: inline-block;
+    text-align: left;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+a.forget-password:hover, a.help:hover {
+    text-decoration: underline;
+}
+
+div.footer-contet img {
+    /*position: relative;*/
+    /*top: 40px;*/
+    /*margin: 0 auto;*/
+    /*display: table;*/
+}
+
+/*------------------- Frogot from --------------------------------------------*/
+.froget-form {
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.froget-form p.note {
+    color: #4E4F4B;
+    margin: 28px 0px 40px;
+    text-align: center;
+}
+
+.froget-form div.footer-contet img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
+
+.f-password-reset-type {
+    /*    color: #f00;*/
+    /*    font-family: 'Open Sans', sans-serif;*/
+    clear: both;
+    margin-right: 12px;
+}
+
+.f-password-reset-type + p {
+    display: inline;
+    font-size: 14px;
+}
+
+.re-pass-cont {
+    display: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.help-q-wrapper {
+    display: block;
+    overflow: hidden;
+}
+
+.re-pass-cont p {
+    font-size: 12px;
+    color: rgba(67, 72, 73, 0.86);
+    line-height: 21px;
+    text-align: justify;
+}
+
+.froget-form .reset-pw,
+.btn.re-set-but {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.froget-form h3 {
+    text-align: left;
+}
+
+label.error-val,
+span.error-val {
+    background: #fdf5e2 none repeat scroll 0 0;
+    border-radius: 2px;
+    color: #f26b55 !important;
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 8px 10px;
+    position: relative;
+    width: 100%;
+}
+
+/*==============================================================================
+    Checkbox and radio button
+==============================================================================*/
+/*==============================================================================
+    Checkbox and radio button
+==============================================================================*/
+
+.but-gruop-wrp {
+    display: table;
+    margin-bottom: 20px;
+}
+
+.but-gruop-wrp label {
+    display: table;
+    vertical-align: middle;
+    z-index: 9;
+    position: relative;
+    overflow: visible;
+}
+
+.but-gruop-wrp span {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: normal;
+}
+
+.but-gruop-wrp input[type="checkbox"],
+.but-gruop-wrp input[type="radio"] {
+    display: none;
+}
+
+.but-gruop-wrp .check-box,
+.but-gruop-wrp .radio {
+    width: 20px;
+    height: 20px;
+    background: #dbdbdb;
+    position: relative;
+    margin-right: 3px;
+}
+
+.but-gruop-wrp .check-box::after,
+.but-gruop-wrp .radio::after {
+    content: "";
+    display: none;
+    position: absolute;
+}
+
+.but-gruop-wrp .check-box::after {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    height: 6px;
+    left: 4px;
+    top: 6px;
+    transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 12px;
+}
+
+.but-gruop-wrp input[type="checkbox"]:checked + .check-box::after {
+    display: block;
+}
+
+.but-gruop-wrp input[type="checkbox"]:checked + .check-box {
+    background: #168ca8;
+}
+
+.but-gruop-wrp.with-border input[type="checkbox"]:checked + .check-box::before {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+}
+
+/*--------------Radio buttton----------------*/
+.but-gruop-wrp .radio {
+    border-radius: 50%;
+}
+
+.but-gruop-wrp .radio::after {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    height: 6px;
+    left: 7px;
+    top: 7px;
+    width: 6px;
+}
+
+.but-gruop-wrp input[type="radio"]:checked + .radio::after {
+    display: block;
+}
+
+.but-gruop-wrp input[type="radio"]:checked + .radio {
+    background: #168ca8;
+}
+
+.block-360 {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.center-box {
+    width: inherit;
+    text-align: center;
+}
+
+.logo-box {
+    margin-top: 40px;
+}
+
+/*.abcRioButton {*/
+/*    width:100% !important;*/
+/*    height: 32px !important;*/
+/*    border-radius: 2px !important;*/
+/*}*/
+
+/*.abcRioButtonContents{*/
+/*    margin-left: -28px !important;*/
+/*}*/
+
+.password-container-login{
+    position: relative;
+}
+.loginpassWordcheckIcon{
+    background: #fff0 url(../../images/system/icon/form/20/password_hide.png) no-repeat right center !important;
+    width: 40px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 4%;
+    cursor: pointer;
+}
+.loginpassWordcheckIcon.fa-eye-slash{
+    background: #fff0  url(../../images/system/icon/form/20/password_show-alt.png) no-repeat right center !important;
+    
+}
+.f-14-liner{
+    color: rgba(75, 141, 248, 1);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.bt-head{
+    display: flex;
+    justify-content: space-between;
+}
